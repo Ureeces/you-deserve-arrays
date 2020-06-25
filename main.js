@@ -1,7 +1,17 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+function getFirstItemFrom(arr) {
+  return arr[0];
+}
 
+function getLastItemFrom(arr) {
+  return arr[arr.length - 1];
+}
+
+function index3(arr) {
+  return arr[2];
+}
 
 
 
