@@ -9,8 +9,39 @@ function getLastItemFrom(arr) {
   return arr[arr.length - 1];
 }
 
-function index3(arr) {
-  return arr[2];
+function getIndex3(arr) {
+  if(arr.length > 4) {
+    return arr[3];
+  }
+
+  return arr[arr.length - 1];
+}
+
+function isLongList(arr) {
+  const len = arr.length;
+  if(len >= 10) {
+    return true;
+  }
+
+  return false;
+}
+
+function firstItemIsNumber(arr) {
+  const firstItem = arr[0];
+  if(typeof(firstItem) === "number") {
+    return true;
+  }
+
+  return false;
+}
+
+function secondCharOfThirdString(arr) {
+  const third = arr[2];
+  if(typeof(third) === "string") {
+    return third[1];
+  }
+
+  return "Not a string.";
 }
 
 
